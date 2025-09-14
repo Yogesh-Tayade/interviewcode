@@ -31,10 +31,24 @@ public class crack {
 		}
 		System.out.println(result);
 	}
+	
+	void findcountofwordrepeats()
+	{
+		String s="yogesh mangesh nilesh ramesh";
+		String tofind="sh";
+		int index=s.indexOf(tofind);
+		int count=0;
+		while(index!=-1)
+		{
+			count++;
+			index=s.indexOf(tofind, index+1);
+		}
+		System.out.println(tofind+":"+count);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		crack obj=new crack();
-		obj.remduplicatechrinstring();
+		obj.findcountofwordrepeats();
 	}
 
 }
