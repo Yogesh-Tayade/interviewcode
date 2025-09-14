@@ -1,5 +1,7 @@
 package interview;
 
+import java.util.Arrays;
+
 public class crack {
 	void mirror()
 	{
@@ -45,10 +47,24 @@ public class crack {
 		}
 		System.out.println(tofind+":"+count);
 	}
+	void secondplacecodeformaxnumberfromarray()
+	{
+		int a[]= {1,2,3,4,5};
+		int max=a[0];
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]>max)
+			{
+				max=a[i];
+			}
+		}
+		System.out.println(Arrays.toString(a));
+		System.out.println(max);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		crack obj=new crack();
-		obj.findcountofwordrepeats();
+		obj.secondplacecodeformaxnumberfromarray();
 	}
 
 }
